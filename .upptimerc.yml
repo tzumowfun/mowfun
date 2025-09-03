@@ -1,3 +1,7 @@
+owner: tzumowfun  
+repo: upptime     
+user-agent: MowFun
+
 sites:
   - name: MowFun 主網站
     url: https://mowfun.app/
@@ -18,3 +22,8 @@ sites:
     
   - name: GitHub (依賴服務)
     url: https://github.com/
+
+status-website:
+  name: MowFun 系統狀態
+  introTitle: "服務監控"
+  introMessage: 實時監控系統服務狀態
