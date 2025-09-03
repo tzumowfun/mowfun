@@ -2,21 +2,21 @@
 
 # 網站監控設定
 sites:
-  # 前端頁面 - 保持原有設定
+  # 前端頁面 - 正確網址
   - name: mowfun 主頁面
-    url: https://your-mowfun-site.com
+    url: https://mowfun.app
     
   - name: mowfun 登入頁面
-    url: https://your-mowfun-site.com/login
+    url: https://mowfun.app/login
     
   - name: mowfun 註冊頁面
-    url: https://your-mowfun-site.com/register
+    url: https://mowfun.app/signup
     
   - name: mowfun 紀錄頁面
-    url: https://your-mowfun-site.com/records
+    url: https://mowfun.app/log
     
   - name: mowfun 報告頁面
-    url: https://your-mowfun-site.com/reports
+    url: https://mowfun.app/report
 
   # Supabase 服務監控 - 優化設定
   - name: Supabase Database
