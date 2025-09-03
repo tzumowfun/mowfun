@@ -52,9 +52,9 @@ sites:
 
 # 全域設定
 status-website:
-  # 你的狀態頁面設定
-  cname: status.your-domain.com # 替換成你的域名
-  logoUrl: https://your-logo-url.com/logo.png
+  # 你的狀態頁面設定 - 使用 GitHub Pages
+  cname: tzumowfun.github.io/mowfun # GitHub Pages 網址
+  logoUrl: https://mowfun.app/favicon.ico
   name: Mowfun Status
   introTitle: "Mowfun 服務狀態"
   introMessage: 監控 Mowfun 及相關服務的即時狀態
