@@ -3,23 +3,23 @@ owner: tzumowfun
 repo: mowfun
 
 sites:
-  - name: mowfun 主頁面
+  - name: 主頁面
     url: https://mowfun.app
     icon: https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg
     
-  - name: mowfun 登入頁面
+  - name: 登入頁面
     url: https://mowfun.app/login
     icon: https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg
     
-  - name: mowfun 註冊頁面
+  - name: 註冊頁面
     url: https://mowfun.app/signup
     icon: https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg
     
-  - name: mowfun 紀錄頁面
+  - name: 紀錄頁面
     url: https://mowfun.app/log
     icon: https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg
     
-  - name: mowfun 報告頁面
+  - name: 報告頁面
     url: https://mowfun.app/report
     icon: https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg
     
