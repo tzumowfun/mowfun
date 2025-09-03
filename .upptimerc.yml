@@ -1,67 +1,81 @@
-owner: tzumowfun
-repo: mowfun
-user-agent: mowfun
+# .upptimerc.yml - 最佳監控設定
 
+# 網站監控設定
 sites:
+  # 前端頁面 - 保持原有設定
   - name: mowfun 主頁面
-    url: https://mowfun.app/
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-      - 401
-      - 403
+    url: https://your-mowfun-site.com
     
   - name: mowfun 登入頁面
-    url: https://mowfun.app/login
-    expectedStatusCodes:
-      - 200
-      - 401
+    url: https://your-mowfun-site.com/login
     
   - name: mowfun 註冊頁面
-    url: https://mowfun.app/signup
-    expectedStatusCodes:
-      - 200
-      - 401
+    url: https://your-mowfun-site.com/register
     
   - name: mowfun 紀錄頁面
-    url: https://mowfun.app/log
-    expectedStatusCodes:
-      - 200
-      - 401
-      - 302
+    url: https://your-mowfun-site.com/records
     
   - name: mowfun 報告頁面
-    url: https://mowfun.app/report
-    expectedStatusCodes:
-      - 200
-      - 401
-      - 302
-    
+    url: https://your-mowfun-site.com/reports
+
+  # Supabase 服務監控 - 優化設定
   - name: Supabase Database
     url: https://wmjleoufkrurqyclafcl.supabase.co/rest/v1/
-    expectedStatusCodes:
-      - 400
-      - 401
-    
-  - name: Supabase Auth
-    url: https://wmjleoufkrurqyclafcl.supabase.co/auth/v1/signup
+    # 方法1: 接受401為正常狀態（推薦）
     expectedStatusCodes:
       - 200
-      - 400
-      - 422
+      - 401
+    # 設定合理的超時時間
+    maxResponseTime: 10000
+    
+  - name: Supabase Auth
+    url: https://wmjleoufkrurqyclafcl.supabase.co/auth/v1/settings
+    # 方法1: 接受401為正常狀態（推薦）
+    expectedStatusCodes:
+      - 200
+      - 401
+    # 設定合理的超時時間
+    maxResponseTime: 10000
 
+  # 額外監控 Storage（如果需要的話）
+  # - name: Supabase Storage
+  #   url: https://wmjleoufkrurqyclafcl.storage.supabase.co/storage/v1/s3
+  #   expectedStatusCodes:
+  #     - 200
+  #     - 401
+  #     - 403
+  #   maxResponseTime: 10000
+
+# 全域設定
 status-website:
-  baseUrl: /mowfun
-  name: mowfun 系統狀態
-  introTitle: "服務監控"
-  introMessage: 實時監控系統服務狀態
+  # 你的狀態頁面設定
+  cname: status.your-domain.com # 替換成你的域名
+  logoUrl: https://your-logo-url.com/logo.png
+  name: Mowfun Status
+  introTitle: "Mowfun 服務狀態"
+  introMessage: 監控 Mowfun 及相關服務的即時狀態
+  
+# 監控頻率設定（重要！）
+schedule: "*/5 * * * *"  # 每5分鐘檢查一次，避免觸發 rate limit
 
+# 通知設定
+notifications:
+  # 可以加入 Slack、Discord、Email 通知
+  # - type: slack
+  #   webhook: $SLACK_WEBHOOK_URL
+  
+# 其他重要設定
+assignees:
+  - your-github-username
+
+user-agent: mowfun-uptime-monitor
+
+# 設定工作流程權限
 workflowSchedule:
   graphs: "0 0 * * *"
-  responseTime: "0 23 * * *"
+  responseTime: "0 23 * * *" 
   staticSite: "0 1 * * *"
-  summary: "0 23 * * *"
+  summary: "0 0 * * *"
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
   uptime: "*/5 * * * *"
