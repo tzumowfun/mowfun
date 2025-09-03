@@ -1,21 +1,22 @@
-# .upptimerc.yml - 使用系統字體版本
+# .upptimerc.yml - 完整正確版本
 owner: tzumowfun
 repo: mowfun
 
+# 網站監控設定
 sites:
-  - name: mowfun 主頁面
+  - name: Mowfun 主頁面
     url: https://mowfun.app
     
-  - name: mowfun 登入頁面
+  - name: Mowfun 登入頁面
     url: https://mowfun.app/login
     
-  - name: mowfun 註冊頁面
+  - name: Mowfun 註冊頁面
     url: https://mowfun.app/signup
     
-  - name: mowfun 紀錄頁面
+  - name: Mowfun 紀錄頁面
     url: https://mowfun.app/log
     
-  - name: mowfun 報告頁面
+  - name: Mowfun 報告頁面
     url: https://mowfun.app/report
     
   - name: Supabase Database
@@ -32,36 +33,53 @@ sites:
       - 401
     maxResponseTime: 10000
 
+# 狀態網站設定
 status-website:
-  logoUrl: https://mowfun.app/favicon.ico
   name: Mowfun Status
-  introTitle: "Mowfun 服務狀態"
-  introMessage: 監控 Mowfun 及相關服務的即時狀態
+  logoUrl: https://mowfun.app/favicon.ico
+  introTitle: "Mowfun 服務狀態監控"
+  introMessage: "即時監控 Mowfun 網站及相關服務的運行狀態"
+  
+  # GitHub Pages 路徑設定 - 這是關鍵！
   baseUrl: /mowfun
+  
+  # 主題設定
   theme: light
   
-  # 使用系統字體，避免載入外部字體
+  # 導航連結
+  navbar:
+    - title: 回到 Mowfun
+      href: https://mowfun.app
+  
+  # 使用系統字體避免 CSP 問題
   customHeadHtml: |
     <style>
-      :root {
-        --font-family-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-        --font-family-heading: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-      }
-      body, h1, h2, h3, h4, h5, h6 {
-        font-family: var(--font-family-body);
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
       }
     </style>
 
+# 監控頻率 - 每5分鐘檢查一次
 schedule: "*/5 * * * *"
+
+# 指定維護人員
 assignees:
   - tzumowfun
+
+# 用戶代理設定
 user-agent: mowfun-uptime-monitor
 
+# 工作流程排程
 workflowSchedule:
   graphs: "0 0 * * *"
-  responseTime: "0 23 * * *" 
+  responseTime: "0 23 * * *"
   staticSite: "0 1 * * *"
   summary: "0 0 * * *"
   updateTemplate: "0 0 * * *"
   updates: "0 3 * * *"
   uptime: "*/5 * * * *"
+
+# 通知設定（可選）
+# notifications:
+#   - type: slack
+#     webhook: $SLACK_WEBHOOK_URL
