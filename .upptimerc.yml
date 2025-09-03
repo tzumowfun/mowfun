@@ -1,24 +1,67 @@
 owner: tzumowfun
-repo: mowfun  # 確認這個是正確的 repo 名稱
-user-agent: MowFun
+repo: mowfun
+user-agent: mowfun
 
 sites:
-  - name: MowFun 主網站
+  - name: mowfun 主頁面
     url: https://mowfun.app/
     expectedStatusCodes:
       - 200
       - 301
       - 302
       - 401
+      - 403
     
-  - name: Google
-    url: https://www.google.com/
+  - name: mowfun 登入頁面
+    url: https://mowfun.app/login
+    expectedStatusCodes:
+      - 200
+      - 401
     
-  - name: GitHub
-    url: https://github.com/
+  - name: mowfun 註冊頁面
+    url: https://mowfun.app/signup
+    expectedStatusCodes:
+      - 200
+      - 401
+    
+  - name: mowfun 紀錄頁面
+    url: https://mowfun.app/log
+    expectedStatusCodes:
+      - 200
+      - 401
+      - 302
+    
+  - name: mowfun 報告頁面
+    url: https://mowfun.app/report
+    expectedStatusCodes:
+      - 200
+      - 401
+      - 302
+    
+  - name: Supabase Database
+    url: https://wmjleoufkrurqyclafcl.supabase.co/rest/v1/
+    expectedStatusCodes:
+      - 400
+      - 401
+    
+  - name: Supabase Auth
+    url: https://wmjleoufkrurqyclafcl.supabase.co/auth/v1/signup
+    expectedStatusCodes:
+      - 200
+      - 400
+      - 422
 
 status-website:
-  baseUrl: /mowfun  # 修改這裡，與您的 repo 名稱一致
-  name: MowFun 系統狀態
-  introTitle: "服務監控"  
+  baseUrl: /mowfun
+  name: mowfun 系統狀態
+  introTitle: "服務監控"
   introMessage: 實時監控系統服務狀態
+
+workflowSchedule:
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 23 * * *"
+  updateTemplate: "0 0 * * *"
+  updates: "0 3 * * *"
+  uptime: "*/5 * * * *"
