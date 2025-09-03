@@ -1,7 +1,3 @@
-owner: mowfun
-repo: upptime
-user-agent: MowFun
-
 sites:
   - name: MowFun 主網站
     url: https://mowfun.app/
@@ -10,19 +6,15 @@ sites:
       - 301
       - 302
       - 401
-      - 403
-    maxResponseTime: 30000
     
-  - name: Supabase Database
-    url: https://wmjleoufkrurqyclafcl.supabase.co/rest/v1/
+  - name: Supabase 全球狀態
+    url: https://obuldanrptloktxcffvn.supabase.co/rest/v1/
+    expectedStatusCodes:
+      - 400
+      - 401
     
-  - name: Supabase Auth
-    url: https://wmjleoufkrurqyclafcl.supabase.co/auth/v1/health
+  - name: Google (網路連通性)
+    url: https://www.google.com/
     
-  - name: Supabase Storage
-    url: https://wmjleoufkrurqyclafcl.supabase.co/storage/v1/
-
-status-website:
-  name: MowFun 系統狀態
-  introTitle: "服務監控"
-  introMessage: 實時監控系統服務狀態
+  - name: GitHub (依賴服務)
+    url: https://github.com/
