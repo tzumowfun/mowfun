@@ -1,9 +1,9 @@
 owner: tzumowfun
-repo: upptime
-user-agent: mowfun
+repo: mowfun  # 確認這個是正確的 repo 名稱
+user-agent: MowFun
 
 sites:
-  - name: mowfun 主網站
+  - name: MowFun 主網站
     url: https://mowfun.app/
     expectedStatusCodes:
       - 200
@@ -11,20 +11,14 @@ sites:
       - 302
       - 401
     
-  - name: Supabase 全球狀態
-    url: https://obuldanrptloktxcffvn.supabase.co/rest/v1/
-    expectedStatusCodes:
-      - 400
-      - 401
-    
-  - name: Google (網路連通性)
+  - name: Google
     url: https://www.google.com/
     
-  - name: GitHub (依賴服務)
+  - name: GitHub
     url: https://github.com/
 
 status-website:
-  baseUrl: /upptime  # 添加這行
+  baseUrl: /mowfun  # 修改這裡，與您的 repo 名稱一致
   name: MowFun 系統狀態
-  introTitle: "服務監控"
+  introTitle: "服務監控"  
   introMessage: 實時監控系統服務狀態
