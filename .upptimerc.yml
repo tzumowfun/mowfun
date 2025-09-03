@@ -1,5 +1,9 @@
 # .upptimerc.yml - 最佳監控設定
 
+# GitHub repository 設定 (必要!)
+owner: your-github-username  # 替換成你的 GitHub 用戶名
+repo: your-uptime-repo       # 替換成你的 uptime repository 名稱
+
 # 網站監控設定
 sites:
   # 前端頁面 - 正確網址
@@ -66,7 +70,7 @@ notifications:
   
 # 其他重要設定
 assignees:
-  - your-github-username
+  - tzumowfun
 
 user-agent: mowfun-uptime-monitor
 
