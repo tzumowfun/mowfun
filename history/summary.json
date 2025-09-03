@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 269,
-    "timeDay": 269,
-    "timeWeek": 269,
-    "timeMonth": 269,
-    "timeYear": 269,
+    "time": 232,
+    "timeDay": 232,
+    "timeWeek": 232,
+    "timeMonth": 232,
+    "timeYear": 232,
     "dailyMinutesDown": {}
   },
   {
@@ -23,18 +23,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/wmjleoufkrurqyclafcl.supabase.co.ico",
     "slug": "supabase-database",
     "status": "down",
-    "uptime": "2.36%",
-    "uptimeDay": "2.36%",
-    "uptimeWeek": "2.36%",
-    "uptimeMonth": "2.36%",
-    "uptimeYear": "2.36%",
-    "time": 88,
-    "timeDay": 88,
-    "timeWeek": 88,
-    "timeMonth": 88,
-    "timeYear": 88,
+    "uptime": "0.00%",
+    "uptimeDay": "0.00%",
+    "uptimeWeek": "0.00%",
+    "uptimeMonth": "0.00%",
+    "uptimeYear": "0.00%",
+    "time": 132,
+    "timeDay": 132,
+    "timeWeek": 132,
+    "timeMonth": 132,
+    "timeYear": 132,
     "dailyMinutesDown": {
-      "2025-09-03": 0
+      "2025-09-03": 7
     }
   },
   {
@@ -43,18 +43,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/wmjleoufkrurqyclafcl.supabase.co.ico",
     "slug": "supabase-auth",
     "status": "down",
-    "uptime": "0.00%",
-    "uptimeDay": "0.00%",
-    "uptimeWeek": "0.00%",
-    "uptimeMonth": "0.00%",
-    "uptimeYear": "0.00%",
-    "time": 14,
-    "timeDay": 14,
-    "timeWeek": 14,
-    "timeMonth": 14,
-    "timeYear": 14,
+    "uptime": "0.06%",
+    "uptimeDay": "0.06%",
+    "uptimeWeek": "0.06%",
+    "uptimeMonth": "0.06%",
+    "uptimeYear": "0.06%",
+    "time": 23,
+    "timeDay": 23,
+    "timeWeek": 23,
+    "timeMonth": 23,
+    "timeYear": 23,
     "dailyMinutesDown": {
-      "2025-09-03": 0
+      "2025-09-03": 7
     }
   },
   {
@@ -63,18 +63,18 @@
     "icon": "https://icons.duckduckgo.com/ip3/wmjleoufkrurqyclafcl.supabase.co.ico",
     "slug": "supabase-storage",
     "status": "down",
-    "uptime": "18.49%",
-    "uptimeDay": "18.49%",
-    "uptimeWeek": "18.49%",
-    "uptimeMonth": "18.49%",
-    "uptimeYear": "18.49%",
-    "time": 746,
-    "timeDay": 746,
-    "timeWeek": 746,
-    "timeMonth": 746,
-    "timeYear": 746,
+    "uptime": "0.50%",
+    "uptimeDay": "0.50%",
+    "uptimeWeek": "0.50%",
+    "uptimeMonth": "0.50%",
+    "uptimeYear": "0.50%",
+    "time": 714,
+    "timeDay": 714,
+    "timeWeek": 714,
+    "timeMonth": 714,
+    "timeYear": 714,
     "dailyMinutesDown": {
-      "2025-09-03": 0
+      "2025-09-03": 7
     }
   }
 ]
