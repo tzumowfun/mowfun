@@ -1,10 +1,17 @@
 owner: mowfun
-repo: upptime  
+repo: upptime
 user-agent: MowFun
 
 sites:
   - name: MowFun 主網站
     url: https://mowfun.app/
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+      - 401
+      - 403
+    maxResponseTime: 30000
     
   - name: Supabase Database
     url: https://wmjleoufkrurqyclafcl.supabase.co/rest/v1/
