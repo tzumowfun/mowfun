@@ -1,4 +1,4 @@
-# .upptimerc.yml - 修正 cron 語法版本
+# .upptimerc.yml - 完全消除 logo 錯誤版本
 owner: tzumowfun
 repo: mowfun
 
@@ -58,38 +58,42 @@ status-website:
       }
     </style>
     <script>
+      // 完全阻止所有圖片載入錯誤
       window.addEventListener('error', function(e) {
-        if (e.target && (e.target.src || e.target.href)) {
-          const url = e.target.src || e.target.href;
-          if (url.includes('.ico') || url.includes('logo-192.png')) {
+        if (e.target && e.target.tagName) {
+          if (e.target.tagName === 'IMG' || e.target.tagName === 'LINK') {
+            e.stopPropagation();
             e.preventDefault();
             return true;
           }
         }
         if (e.message && e.message.includes('Invalid scale configuration')) {
+          e.stopPropagation();
           e.preventDefault();
           return true;
         }
       }, true);
       
-      window.addEventListener('load', function() {
+      // 移除所有可能的問題圖片
+      window.addEventListener('DOMContentLoaded', function() {
         setTimeout(function() {
-          const failedImages = document.querySelectorAll('img[src*=".ico"], img[src*="logo-192.png"]');
-          failedImages.forEach(img => {
-            img.style.display = 'none';
+          // 移除所有可能導致 404 的圖片元素
+          const problematicImages = document.querySelectorAll('img[src*="logo-192"], img[src*=".ico"], link[href*="logo-192"], link[href*=".ico"]');
+          problematicImages.forEach(element => {
+            element.remove();
           });
-        }, 1000);
+        }, 500);
       });
     </script>
+  
+  # 移除可能導致問題的 PWA 相關設定
+  # 不設定 manifest 避免尋找 logo-192.png
 
-# 修正 cron 語法 - 每5分鐘檢查一次
 schedule: "*/5 * * * *"
-
 assignees:
   - tzumowfun
 user-agent: mowfun-uptime-monitor
 
-# 修正所有工作流程的 cron 語法
 workflowSchedule:
   graphs: "0 0 * * *"
   responseTime: "0 23 * * *"
