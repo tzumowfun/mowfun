@@ -1,9 +1,9 @@
-owner: tzumowfun  
-repo: upptime     
-user-agent: MowFun
+owner: tzumowfun
+repo: upptime
+user-agent: mowfun
 
 sites:
-  - name: MowFun 主網站
+  - name: mowfun 主網站
     url: https://mowfun.app/
     expectedStatusCodes:
       - 200
@@ -24,6 +24,7 @@ sites:
     url: https://github.com/
 
 status-website:
+  baseUrl: /upptime  # 添加這行
   name: MowFun 系統狀態
   introTitle: "服務監控"
   introMessage: 實時監控系統服務狀態
