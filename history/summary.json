@@ -6,7 +6,7 @@
     "slug": "",
     "status": "up",
     "uptime": "99.88%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.88%",
@@ -16,6 +16,7 @@
     "timeMonth": 232,
     "timeYear": 123,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 30,
       "2025-09-03": 126
     }
@@ -27,7 +28,7 @@
     "slug": "",
     "status": "up",
     "uptime": "99.88%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.88%",
@@ -37,6 +38,7 @@
     "timeMonth": 232,
     "timeYear": 123,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 30,
       "2025-09-03": 126
     }
@@ -48,7 +50,7 @@
     "slug": "",
     "status": "up",
     "uptime": "99.88%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.88%",
@@ -58,6 +60,7 @@
     "timeMonth": 232,
     "timeYear": 123,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 30,
       "2025-09-03": 126
     }
@@ -69,7 +72,7 @@
     "slug": "",
     "status": "up",
     "uptime": "99.88%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.88%",
@@ -79,6 +82,7 @@
     "timeMonth": 232,
     "timeYear": 123,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 30,
       "2025-09-03": 126
     }
@@ -90,7 +94,7 @@
     "slug": "",
     "status": "up",
     "uptime": "99.88%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "99.93%",
     "uptimeYear": "99.88%",
@@ -100,6 +104,7 @@
     "timeMonth": 232,
     "timeYear": 123,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 30,
       "2025-09-03": 126
     }
@@ -109,18 +114,19 @@
     "url": "https://wmjleoufkrurqyclafcl.supabase.co/rest/v1/",
     "icon": "https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg",
     "slug": "supabase-database",
-    "status": "up",
+    "status": "down",
     "uptime": "99.96%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.97%",
+    "uptimeMonth": "99.96%",
     "uptimeYear": "99.96%",
-    "time": 154,
-    "timeDay": 186,
-    "timeWeek": 148,
-    "timeMonth": 183,
-    "timeYear": 154,
+    "time": 153,
+    "timeDay": 125,
+    "timeWeek": 137,
+    "timeMonth": 180,
+    "timeYear": 153,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 15,
       "2025-09-03": 32
     }
@@ -130,18 +136,19 @@
     "url": "https://wmjleoufkrurqyclafcl.supabase.co/auth/v1/settings",
     "icon": "https://raw.githubusercontent.com/upptime/upptime/master/assets/upptime-icon.svg",
     "slug": "supabase-auth",
-    "status": "up",
+    "status": "down",
     "uptime": "99.94%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.99%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.97%",
+    "uptimeMonth": "99.96%",
     "uptimeYear": "99.94%",
-    "time": 25,
-    "timeDay": 46,
-    "timeWeek": 35,
-    "timeMonth": 28,
-    "timeYear": 25,
+    "time": 24,
+    "timeDay": 28,
+    "timeWeek": 32,
+    "timeMonth": 27,
+    "timeYear": 24,
     "dailyMinutesDown": {
+      "2025-12-05": 0,
       "2025-11-24": 15,
       "2025-09-03": 62
     }
