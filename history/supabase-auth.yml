@@ -1,7 +1,7 @@
 url: https://wmjleoufkrurqyclafcl.supabase.co/auth/v1/settings
-status: down
-code: 500
-responseTime: 10
-lastUpdated: 2025-12-05T08:56:29.235Z
+status: up
+code: 401
+responseTime: 28
+lastUpdated: 2025-12-05T09:13:29.066Z
 startTime: 2025-09-03T08:54:18.121Z
 generator: Upptime <https://github.com/upptime/upptime>
